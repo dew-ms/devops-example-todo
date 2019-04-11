@@ -1,0 +1,5 @@
+profiles:
+  uat:
+    namespace: dew-uat
+  prod:
+    namespace: dew-prod

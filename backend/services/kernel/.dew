@@ -1,0 +1,2 @@
+docker:
+  image: openjdk:8
