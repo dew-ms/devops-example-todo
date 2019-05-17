@@ -16,27 +16,17 @@
 
 package ms.dew.devops.it.todo.common;
 
+import org.junit.Test;
+
 /**
- * Constants.
+ * Some test.
  *
  * @author gudaoxuri
  */
-public class Constants {
+public class SomeTest {
 
-
-    /**
-     * The constant MQ_NOTIFY_TODO_ADD.
-     */
-    public static final String MQ_NOTIFY_TODO_ADD = "todo:notify:todo:add";
-
-    /**
-     * The constant MQ_NOTIFY_TODO_DEL.
-     */
-    public static final String MQ_NOTIFY_TODO_DEL = "todo:notify:todo:del";
-
-    /**
-     * The constant REST_COMPUTE_SERVICE.
-     */
-    public static final String REST_COMPUTE_SERVICE = "compute";
-
+    /*@Test
+    public void testAll() throws Exception {
+        throw new Exception("Has error.");
+    }*/
 }

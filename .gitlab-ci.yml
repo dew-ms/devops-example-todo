@@ -1,0 +1,25 @@
+stages:
+  - deploy
+
+cache:
+  paths:
+    - frontend/node_modules/
+    - .m2/
+
+uat deploy:
+  stage: deploy
+  only:
+    - uat
+  tags:
+    - uat
+  script:
+    - mvn -P devops dew:release
+
+prod deploy:
+  stage: deploy
+  only:
+    - prod
+  tags:
+    - prod
+  script:
+    - mvn -P devops dew:release

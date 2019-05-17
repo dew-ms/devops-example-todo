@@ -1,10 +1,10 @@
 spring:
   application:
-    name: todo-kernel
+    name: kernel
 
 dew:
   cluster:
-    mq: redis
+    mq: redis # 使用Redis做为Dew集群的MQ实现
 
 management:
   endpoint:

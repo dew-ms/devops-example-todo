@@ -28,5 +28,3 @@ out/
 .springBeans
 
 node_modules/
-
-!/devops/maven/dew-maven-plugin/src/main/java/ms/dew/devops/kernel/flow/log/

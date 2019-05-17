@@ -14,29 +14,21 @@
  * limitations under the License.
  */
 
-package ms.dew.devops.it.todo.common;
-
-/**
- * Constants.
- *
- * @author gudaoxuri
- */
-public class Constants {
-
-
+module.exports = {
+  env: {
+    NODE_ENV: '"uat"'
+  },
+  defineConstants: {
+  },
+  weapp: {},
+  h5: {
     /**
-     * The constant MQ_NOTIFY_TODO_ADD.
+     * 如果h5端编译后体积过大，可以使用webpack-bundle-analyzer插件对打包体积进行分析。
+     * 参考代码如下：
+     * webpackChain (chain) {
+     *   chain.plugin('analyzer')
+     *     .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
+     * }
      */
-    public static final String MQ_NOTIFY_TODO_ADD = "todo:notify:todo:add";
-
-    /**
-     * The constant MQ_NOTIFY_TODO_DEL.
-     */
-    public static final String MQ_NOTIFY_TODO_DEL = "todo:notify:todo:del";
-
-    /**
-     * The constant REST_COMPUTE_SERVICE.
-     */
-    public static final String REST_COMPUTE_SERVICE = "compute";
-
+  }
 }
